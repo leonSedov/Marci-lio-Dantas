@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ad1b1b;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header .logo-img img {
+    max-width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('banner_campanha.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#hero .hero-content {
+    z-index: 2;
+    position: relative;
+}
+
+#hero .btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 200px; /* Ajuste de espaço entre o texto e o botão */
+    /* Para ajustar a localização do botão, você pode modificar a margem ou o padding abaixo: */
+    position: relative; /* Permite ajustar com top, left, etc. */
+    top: 150px; /* Aumente ou diminua para mover o botão verticalmente */
+    left: 200px; 
+}
+
+#hero .btn:hover {
+    background-color: #FF4500;
+    transform: translateY(-5px);
+}
+
+
+#hero .btn:hover {
+    background-color: #FF4500;
+    transform: translateY(-5px);
+}
+
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #B22222;
+    margin-bottom: 1rem;
+}
+
+.propostas-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: #B22222;
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #B22222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #B22222;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
