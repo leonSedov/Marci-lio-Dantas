@@ -318,3 +318,322 @@ footer p {
 .social-icons i {
     vertical-align: middle;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ad1b1b;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para o menu responsivo */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+/* Tornar o menu responsivo */
+@media (max-width: 768px) {
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 1rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+}
+
+#hero {
+    background-image: url('banner_campanha.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .btn {
+    background-color: #FF6347;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #B22222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 2rem;
+}
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilos do cabeçalho e navegação */
+header {
+    background-color: #ad1b1b;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Menu hamburguer para mobile */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 1rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilo da seção hero */
+#hero {
+    background-image: url('banner_campanha.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Botão "Conheça as Propostas" */
+#hero .btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    margin-top: 200px;
+    left: 200px;
+}
+
+#hero .btn:hover {
+    background-color: #FF4500;
+    transform: translateY(-5px);
+}
+
+/* Ajustes de responsividade para o botão */
+@media (max-width: 768px) {
+    #hero .btn {
+        padding: 0.8rem 1.5rem; /* Reduz o tamanho do botão */
+        font-size: 1rem; /* Reduz a fonte */
+        left: 0; /* Centraliza o botão */
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero .btn {
+        padding: 0.6rem 1.2rem; /* Ajuste ainda maior para telas menores */
+        font-size: 0.9rem; /* Redução do tamanho da fonte */
+        left: 0;
+        margin-top: 100px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #hero {
+        height: 50vh;
+    }
+
+    #hero .btn {
+        padding: 0.6rem 1.2rem; /* Ajuste ainda maior para telas menores */
+        font-size: 0.9rem; /* Ajuste do tamanho do texto no botão */
+    }
+}
+
+/* Estilos gerais */
+.container {
+    padding: 2rem;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #B22222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 2rem;
+}
+
+/* Estilo para o elemento hero */
+#hero {
+    background-image: url('banner_campanha.jpg');
+    background-size: cover;
+    background-position: left center; /* Alinha a imagem à esquerda */
+    color: white;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    #hero {
+        height: 60vh; /* Reduz a altura da imagem de fundo */
+        background-position: left center; /* Garante que a imagem continue alinhada à esquerda */
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        height: 50vh; /* Reduz ainda mais a altura da imagem de fundo */
+        background-position: left center; /* Garante o alinhamento à esquerda */
+    }
+}

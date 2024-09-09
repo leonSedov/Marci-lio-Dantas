@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-       
 </head>
 <body>
     <header>      
         <div class="logo">
             <h1>Marcílio Dantas</h1>
         </div>
-        <nav>
+        <!-- Ícone do Menu Hambúrguer -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="nav-menu" class="hidden">
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#propostas">Propostas</a></li>
@@ -64,7 +67,6 @@
             </div>
         </div>
     </section>
-    
 
     <section id="agenda" class="container">
         <h2>Agenda</h2>
@@ -90,6 +92,43 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+        // Script para abrir e fechar o menu no mobile
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
+
+<style>
+
+
+/* ===============================
+   ESTILOS RESPONSIVOS E MENU HAMBÚRGUER
+   =============================== */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+nav.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+</style>
